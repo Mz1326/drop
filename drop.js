@@ -5,6 +5,9 @@ function drag(id){
 	obj.onmousedown = function(ev){
 		var oEvent = ev ||window.event;
 		disX = oEvent.pageX - obj.offsetLeft;
-		disY = oEvent.pageY -obj.offsetTop;
+		disY = oEvent.pageY - obj.offsetTop;
+
+		obj.onmousemove = function(){}
+		obj.onmouseup = function(){}
 	}
 }
